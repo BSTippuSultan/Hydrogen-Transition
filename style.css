@@ -1,0 +1,156 @@
+
+* {
+    font-family:sans-serif;
+}
+body{
+    margin: 0;
+    padding: 1cm 5cm 0cm;
+    display: flex;
+    flex-wrap:wrap ;
+    flex-direction: row;
+    justify-content: center;
+    height: 80vh;
+} 
+.er {
+    height: 90%;
+    margin: 5px;
+    background-color: aliceblue ;
+    border: 2px solid black;
+}
+.energy {
+    width: 60%;
+    flex-grow: 3;  
+    display: flex;
+    flex-direction: column;
+}
+.range {
+    width: 30%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.bar {
+    color: black;
+    margin: 0;
+    height: 1cm;
+    width: 100%;
+    text-align: center;
+    line-height: 2rem;
+}
+.htebar {
+    background-color: aquamarine;  
+    text-align: left ;  
+    font-weight: bold;    
+}
+.bbar{
+    background-color: aquamarine;    
+    text-align: right ;
+    text-align: right;
+}
+.box {
+    border: 2px solid black;
+    height: 75%;
+    width: 75%;
+    align-self: center;
+    margin-top: 2cm;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+label{
+    margin: 0;
+    padding: 0;
+    display:block;
+    margin-top: 1cm ;
+    height: 1cm;
+}
+label p {
+    margin: 0;
+    padding: 0;   
+    display: inline-block;
+    line-height: 2rem;
+    height: 1rem;
+    width: 2.5cm;
+    font-size: large;
+    padding-left: 10px;
+}
+label input{
+    height: 0.5cm;
+    font-weight: bold;
+    font-size: large;
+
+}
+.result_board{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1cm;
+}
+
+#submit {
+height: 1cm;
+background-color: aquamarine;
+border: 2px solid black;
+font-size: large;
+font-weight: bold;
+border-radius: 0.5rem;
+margin-left: 10px;
+
+}
+
+.result_drop {
+    border: 2px solid black;
+    height: 1cm;
+    line-height: 2rem;
+    border-radius: 0.5rem;
+    margin-right: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+}
+.result_drop .ans {
+   margin: 0px; 
+   padding-left: 10px;
+   width: 50%;
+}
+
+.units {
+    background-color: aquamarine;
+    flex-grow:1 ;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+    border-radius: 0px 7px 7px 0px;
+}
+.units option {
+    height: 1cm;
+    background-color:inherit;
+}
+.wavebar {
+    width: 100%;
+    text-align: center;
+    background-color: aquamarine;
+    font-weight: bold;
+    justify-self: start;
+}
+#wave-properties_img {
+    width: 75%; 
+    align-self: center; 
+    margin-top: 3rem;
+}
+.region_color {
+    height: 1cm;
+    width:75%; 
+    border: 2px solid black; 
+    margin: 1rem;
+    border-radius: 5px; 
+    padding: 0.1rem; 
+    align-self: center;
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: x-large;
+    font-weight: bolder;
+}
