@@ -102,10 +102,9 @@ margin-left: 10px;
 .result_drop {
     border: 2px solid black;
     height: 1cm;
-    line-height: 2rem;
     border-radius: 0.5rem;
     margin-right: 10px;
-    width: 50%;
+    width: 55%;
     display: flex;
     flex-direction: row;
     font-size: large;
@@ -114,6 +113,9 @@ margin-left: 10px;
    margin: 0px; 
    padding-left: 10px;
    width: 50%;
+   line-height: 2.5rem;
+    
+
 }
 
 .units {
@@ -127,6 +129,7 @@ margin-left: 10px;
 .units option {
     height: 1cm;
     background-color:inherit;
+    line-height: 1rem;
 }
 .wavebar {
     width: 100%;
@@ -152,4 +155,5 @@ margin-left: 10px;
     line-height: 2.5rem;
     font-size: x-large;
     font-weight: bolder;
+    
 }
