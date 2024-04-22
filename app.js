@@ -34,6 +34,12 @@ function calAns (){
     let final = parseInt(final_input.value);
     let initial = parseInt(initial_input.value);
 
+    if(final < 0 ){final = 0; }
+    if(final > 10 ){final = 10; }
+
+    if (initial < 0) { initial = 0 ;}
+    if (initial > 10) { initial = 10 ;}
+    
     if (eu.value == 'J') {
 
         ans_e = (-2.18) * (Math.pow(final , -2 ) - Math.pow(initial , -2 )) ;
