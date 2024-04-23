@@ -29,27 +29,44 @@ wu.addEventListener('click' , (event) => {
 submit.addEventListener('click',(event) => {
     event.preventDefault();
     calAns();
-})
-function calAns (){
-    let final = parseInt(final_input.value);
-    let initial = parseInt(initial_input.value);
+});
+
+
+function calAns (){    
+    
+let final = parseInt(final_input.value);
+let initial = parseInt(initial_input.value);
+let errortag = document.querySelector('.error');
+
+errortag.innerText = '';
+errortag.style.backgroundColor = 'inherit';
+
+if(final < 1 || initial < 1 || !(Number.isInteger(final)) || !(Number.isInteger(initial)) ){
+    errortag.innerText = 'Invalid Values Entered';
+    errortag.style.backgroundColor = 'red';
+    setTimeout(() => {
+        errortag.style.backgroundColor = 'rgb(210, 128, 145)';
+    }, 300)
+    
+    return;
+}
 
     if (eu.value == 'J') {
 
-        ans_e = (-2.18) * (Math.pow(final , -2 ) - Math.pow(initial , -2 )) ;
+        ans_e = ( (2.18) * (Math.pow(final , -2 ) - Math.pow(initial , -2 )) )  ;
         energy_result.innerText = ans_e.toFixed(3) ;
     } else if (eu.value == 'eV') {
-        ans_e = (13.6) * ((1/final)*(1/final) - (1/initial)*(1/initial)) ;
+        ans_e = ( (2.18) * (Math.pow(final , -2 ) - Math.pow(initial , -2 )) * (6.2415) ); 
         energy_result.innerText = ans_e.toFixed(3) ;
     }  
     
     if (wu.value == 'nm') {
         ans_w_unit_nm = true ;
-        ans_w = (100/1.097) * (Math.pow(final , -2 ) - Math.pow(initial , -2 ));
+        ans_w = (100/1.097) / (Math.pow(final , -2 ) - Math.pow(initial , -2 ));
         wavelength_result.innerText = ans_w.toFixed(3);
     } else if (wu.value == 'm') {
         ans_w_unit_nm = false ;
-        ans_w = (1/1.097) * (Math.pow(final , -2 ) - Math.pow(initial , -2 ));
+        ans_w = (1/1.097) / (Math.pow(final , -2 ) - Math.pow(initial , -2 ));
         wavelength_result.innerText = ans_w.toFixed(5);
     }
 

@@ -51,7 +51,7 @@ body{
     height: 75%;
     width: 75%;
     align-self: center;
-    margin-top: 2cm;
+    margin-top: 1cm;
     display: flex;
     flex-direction:column;
     flex-wrap: wrap;
@@ -157,4 +157,19 @@ margin-left: 10px;
     font-size: x-large;
     font-weight: bolder;
     
+}
+.error{
+    margin: 2px;
+    align-self: center;
+    width: 50%;
+    height: 1cm;
+    color: black;
+    text-align: center;
+    line-height: 2rem;
+    font-size: large;
+    font-weight: bold;
+    /* background-color: rgb(210, 128, 145); */
+}
+.errorRed {
+    background-color:red ;
 }
