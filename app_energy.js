@@ -10,9 +10,7 @@ let wavelength_result = document.querySelector("#wavelength_result");
 let wu = document.querySelector("#wavelength_units");
 
 let region = document.querySelector("#region");
-/*
-let color = document.querySelector("#color");
-*/
+
 let ans_e = 1 ; 
 let ans_w =  1 ;
 let ans_w_unit_nm ;

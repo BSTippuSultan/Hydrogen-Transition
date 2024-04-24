@@ -3,11 +3,19 @@
     padding: 0;
     overflow-x: hidden;
 }
-
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 nav{
+    top: 0;
+    margin: 0;
     width: 100vw;
-    height: auto;
-    background-color: rgb(4, 20, 110);
+    height: 2cm;
+    background-color: rgb(23, 78, 166);  
+    color: white;
+    /* background-color: rgb(4, 20, 110); */
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -16,17 +24,24 @@ nav{
 nav ul{
     display: flex;
     padding: 12px;
+    overflow: hidden;
 }
 
 nav ul li{
-    padding: 20px;
-    color: rgb(255, 255, 255);
+  padding: 20px;
+   color: white;
+   font-size: large;
+   margin-right: 0.5cm;
+   overflow: hidden;
 }
-
+nav ul :hover {
+text-decoration: underline;
+}
 a{
     text-decoration: none;
-    color: white;
-}
+    color: inherit;
+    font-size: large;
+}    
 
 nav div{
     display: flex;
@@ -36,19 +51,22 @@ nav div{
 
 .intro{
     display: flex;
+    
     justify-content: center;
 }
 
 .energy{
     width: 90vw;
     height: 60vh;
-    background-color: rgb(180, 180, 180);
+    background-color: aliceblue;
     display: flex;
     margin: 30px;
     padding: 25px;
     align-items: center;
     justify-content: space-between;
     border-radius: 10px;
+    font-size: large;
+    line-height: 2rem;
 }
 
 .enImg{
@@ -64,12 +82,6 @@ nav div{
     width: 40vw;
 }
 
-.ebutt{
-    background-color: blue;
-    color: white;
-    border-radius: 7px;
-}
-
 .spectrum{
     width: 90vw;
     height: 60vh;
@@ -81,6 +93,8 @@ nav div{
     justify-content: space-between;
     border: 2px solid black;
     border-radius: 10px;
+    font-size: large;
+    line-height: 2rem;
 }
 
 .spimg{
@@ -97,11 +111,19 @@ nav div{
 }
 
 .ebutt{
-    background-color: blue;
+    margin-top: 0.5cm;
+    background-color: rgb(23, 78, 166) ;
     color: white;
     border-radius: 7px;
-    width: 100px;
-    height: 25px;
+    width: 4cm; height:1cm;
+    overflow-y: hidden;
+    text-align: center;
+    padding: 3px;
+    font-size: large;
+    font-weight:400 ;
+}
+.ebutt:hover {
+    background-color: blue;
 }
 
 footer{
