@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy</title>
+    <link rel="stylesheet" href="style_energy.css">
+    <link rel="icon" href="logo.png"> 
+</head>
+<body>
+   <div class="energy er">
+    <div class="htebar bar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hydrogen Transition Energy</div>
+ 
+    <div class="box">
+        <p class="bar bbar">Computes the Change in energy of an electron &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p> 
+        <form action="#">
+            <label for="final">
+                <p>final state</p>
+                <input type="number" id="final" min="1">
+            </label>
+            <label for="final">
+                <p>initial state</p>               
+                <input type="number" id="initial" min="1" >
+            </label>
+            <div class="result_board">
+                <button type="submit" id="submit">&nbsp;Submit&nbsp;</button>
+                <div class="result_drop">
+                    <div class="ans"  id="energy_result">   </div>                    
+                    <select name="energy_units" id="energy_units" class="units" >
+                        <option value="J">e-18 Joules</option>                        
+                        <option value="eV">eV</option>
+                    </select>                
+                </div>
+            </div>
+            <div class="result_board" style="flex-direction: row-reverse;">
+                <div class="result_drop" >
+                    <div class="ans"  id = "wavelength_result" > </div>                    
+                    <select name="wavelength_units" id="wavelength_units" class="units">
+                        <option value="nm" >nano metre</option>                        
+                        <option value="m" selected >e-7 metre</option>
+                    </select>                
+                </div>
+            </div>
+           
+        </form>
+    </div>
+    <div class="error">         </div>
+</div>
+   <div class="range er">
+    <div class="wavebar bar">Wave Properties</div>
+    <img src="wave_properties1.jpg"  class="wave_properties_img" style=" margin-top: 30px;">
+    <img src="wave_properties2.jpg"  class="wave_properties_img" >
+    <div class="region_color" id="region" ></div>
+    <!--edited-->
+   </div>
+    <script src="app_energy.js"></script>
+</body>
+</html>

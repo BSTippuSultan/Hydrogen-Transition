@@ -3,56 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Energy</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="logo.png"> 
+    <title>Chemistry Project</title>
+    <link rel="stylesheet" href="style_index.css">
 </head>
 <body>
-   <div class="energy er">
-    <div class="htebar bar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hydrogen Transition Energy</div>
- 
-    <div class="box">
-        <p class="bar bbar">Computes the Change in energy of an electron &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p> 
-        <form action="#">
-            <label for="final">
-                <p>final state</p>
-                <input type="number" id="final" min="1">
-            </label>
-            <label for="final">
-                <p>initial state</p>               
-                <input type="number" id="initial" min="1" >
-            </label>
-            <div class="result_board">
-                <button type="submit" id="submit">&nbsp;Submit&nbsp;</button>
-                <div class="result_drop">
-                    <div class="ans"  id="energy_result">   </div>                    
-                    <select name="energy_units" id="energy_units" class="units" >
-                        <option value="J">e-18 Joules</option>                        
-                        <option value="eV">eV</option>
-                    </select>                
-                </div>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="chem logo.png" alt="logo" width="70px">
             </div>
-            <div class="result_board" style="flex-direction: row-reverse;">
-                <div class="result_drop" >
-                    <div class="ans"  id = "wavelength_result" > </div>                    
-                    <select name="wavelength_units" id="wavelength_units" class="units">
-                        <option value="nm" >nano metre</option>                        
-                        <option value="m" selected >e-7 metre</option>
-                    </select>                
-                </div>
+            <ul type="none">
+                <li>Home</li>
+                <li>About</li>
+                <li><a href="energy.html">Product</a></li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="intro" style="margin-top: 3cm;"> 
+            <h1>INTRODUCTION</h1>
+        </div>
+        <div class="energy">
+            <div class="entext">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, et necessitatibus laboriosam dignissimos, odio, sapiente voluptas officiis aliquid corporis porro ut dolores dolorem rem soluta neque ab impedit? Delectus, assumenda!<br>
+                <button class="ebutt">Learn More</button>
             </div>
-           
-        </form>
-    </div>
-    <div class="error">         </div>
-</div>
-   <div class="range er">
-    <div class="wavebar bar">Wave Properties</div>
-    <img src="wave_properties1.jpg"  class="wave_properties_img" style=" margin-top: 30px;">
-    <img src="wave_properties2.jpg"  class="wave_properties_img" >
-    <div class="region_color" id="region" ></div>
-    <!--edited-->
-   </div>
-    <script src="app.js"></script>
+            <div class="enImg"></div>
+        </div>
+        <div class="spectrum">
+            <div class="spimg"></div>
+            <div class="sptext">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aliquid pariatur accusamus, voluptatum eos animi suscipit quis obcaecati error delectus quisquam officia maxime quae voluptatibus quod ipsam optio et voluptatem.<br>
+                <button class="ebutt">Learn More</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright &copy; || All right reserved</p>
+    </footer>
 </body>
 </html>

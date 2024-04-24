@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+nav{
+    width: 100vw;
+    height: auto;
+    background-color: rgb(4, 20, 110);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+
+nav ul{
+    display: flex;
+    padding: 12px;
+}
+
+nav ul li{
+    padding: 20px;
+    color: rgb(255, 255, 255);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+nav div{
+    display: flex;
+    align-items: center;
+    margin-left: 2vw;
+}
+
+.intro{
+    display: flex;
+    justify-content: center;
+}
+
+.energy{
+    width: 90vw;
+    height: 60vh;
+    background-color: rgb(180, 180, 180);
+    display: flex;
+    margin: 30px;
+    padding: 25px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.enImg{
+    width: 25vw;
+    height: 60vh;
+    display: flex;
+    border-radius: 10px;
+    background-image: url(energy\ img.avif);
+    background-position: center;
+}
+
+.entext{
+    width: 40vw;
+}
+
+.ebutt{
+    background-color: blue;
+    color: white;
+    border-radius: 7px;
+}
+
+.spectrum{
+    width: 90vw;
+    height: 60vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    margin: 30px;
+    padding: 25px;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.spimg{
+    width: 25vw;
+    height: 60vh;
+    display: flex;
+    border-radius: 10px;
+    background-image: url(spectrum\ img.jpeg);
+    background-position: center;
+}
+
+.sptext{
+    width: 40vw;
+}
+
+.ebutt{
+    background-color: blue;
+    color: white;
+    border-radius: 7px;
+    width: 100px;
+    height: 25px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content:center;
+}
+
+main{
+    background-image: url(bgimg.jpg);
+    object-fit: cover;
+}
