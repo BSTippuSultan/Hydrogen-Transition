@@ -148,7 +148,7 @@ margin-left: 10px;
     height: 1cm;
     width:75%; 
     border: 2px solid black; 
-    margin: 1rem;
+    margin-top: 1cm;
     border-radius: 5px; 
     padding: 0.1rem; 
     align-self: center;
@@ -156,7 +156,6 @@ margin-left: 10px;
     line-height: 2.5rem;
     font-size: x-large;
     font-weight: bolder;
-    
 }
 .error{
     margin: 2px;
@@ -168,8 +167,12 @@ margin-left: 10px;
     line-height: 2rem;
     font-size: large;
     font-weight: bold;
-    /* background-color: rgb(210, 128, 145); */
 }
 .errorRed {
     background-color:red ;
+}
+.wave_properties_img {
+    width: 60%; 
+    align-self: center; 
+    margin: 0px;
 }

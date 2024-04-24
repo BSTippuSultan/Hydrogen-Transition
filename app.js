@@ -10,8 +10,9 @@ let wavelength_result = document.querySelector("#wavelength_result");
 let wu = document.querySelector("#wavelength_units");
 
 let region = document.querySelector("#region");
+/*
 let color = document.querySelector("#color");
-
+*/
 let ans_e = 1 ; 
 let ans_w =  1 ;
 let ans_w_unit_nm ;
@@ -31,19 +32,43 @@ submit.addEventListener('click',(event) => {
     calAns();
 });
 
+function calRegion (f,i){
 
+    let lambda = 10*1 ;
+    lambda= Math.abs( (100/1.097) / (Math.pow(f , -2 ) - Math.pow(i , -2 )) ) ;
+     if (lambda >= 1000000 ) {
+        region.innerText = 'Radio Waves' ;
+    } else if (lambda >= 250 ){
+        region.innerText = 'Infrared' ;
+    } else if (lambda >= 800 ){
+        region.innerText = 'Near Infrared';
+    } else if (lambda >= 400) {
+        region.innerText = 'Visible Light';
+      // region.style.backgroundColor = '';
+    } else if (lambda >= 200 ){
+        region.innerText = 'Ultraviolet';
+    } else {
+        region.innerText = 'NOTA' ;
+    }
+}
 function calAns (){    
     
 let final = parseInt(final_input.value);
 let initial = parseInt(initial_input.value);
 let errortag = document.querySelector('.error');
+/* another function */ 
+calRegion(final,initial);
 
 errortag.innerText = '';
 errortag.style.backgroundColor = 'inherit';
 
-if(final < 1 || initial < 1 || !(Number.isInteger(final)) || !(Number.isInteger(initial)) ){
+energy_result.innerText = '' ;
+wavelength_result.innerText = '';
+
+if(final < 1 || initial < 1 || !(Number.isInteger(final)) || !(Number.isInteger(initial)) || final == initial){
     errortag.innerText = 'Invalid Values Entered';
     errortag.style.backgroundColor = 'red';
+    region.innerText = '' ;
     setTimeout(() => {
         errortag.style.backgroundColor = 'rgb(210, 128, 145)';
     }, 300)
@@ -62,18 +87,16 @@ if(final < 1 || initial < 1 || !(Number.isInteger(final)) || !(Number.isInteger(
     
     if (wu.value == 'nm') {
         ans_w_unit_nm = true ;
-        ans_w = (100/1.097) / (Math.pow(final , -2 ) - Math.pow(initial , -2 ));
+        ans_w = Math.abs( (100/1.097) / (Math.pow(final , -2 ) - Math.pow(initial , -2 )) );
         wavelength_result.innerText = ans_w.toFixed(3);
     } else if (wu.value == 'm') {
         ans_w_unit_nm = false ;
-        ans_w = (1/1.097) / (Math.pow(final , -2 ) - Math.pow(initial , -2 ));
+        ans_w = Math.abs((1/1.097) / (Math.pow(final , -2 ) - Math.pow(initial , -2 )));
         wavelength_result.innerText = ans_w.toFixed(5);
     }
+
 
 /*
 by using if else and variable ans_w_unit_nm = true ; we can assign remaining
 */
 }
-
-
-
