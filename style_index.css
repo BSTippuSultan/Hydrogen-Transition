@@ -1,19 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-nav{
+
+nav {
     top: 0;
     margin: 0;
     width: 100vw;
     height: 2cm;
-    background-color: rgb(23, 78, 166);  
+    background-color: rgb(23, 78, 166);
     color: white;
     /* background-color: rgb(4, 20, 110); */
     display: flex;
@@ -21,41 +23,43 @@ nav{
     position: fixed;
 }
 
-nav ul{
+nav ul {
     display: flex;
     padding: 12px;
     overflow: hidden;
 }
 
-nav ul li{
-  padding: 20px;
-   color: white;
-   font-size: large;
-   margin-right: 0.5cm;
-   overflow: hidden;
+nav ul li {
+    padding: 20px;
+    color: white;
+    font-size: large;
+    margin-right: 0.5cm;
+    overflow: hidden;
 }
+
 nav ul :hover {
-text-decoration: underline;
+    text-decoration: underline;
 }
-a{
+
+a {
     text-decoration: none;
     color: inherit;
     font-size: large;
-}    
+}
 
-nav div{
+nav div {
     display: flex;
     align-items: center;
     margin-left: 2vw;
 }
 
-.intro{
+.intro {
     display: flex;
-    
+
     justify-content: center;
 }
 
-.energy{
+.energy {
     width: 90vw;
     height: 60vh;
     background-color: aliceblue;
@@ -69,7 +73,7 @@ nav div{
     line-height: 2rem;
 }
 
-.enImg{
+.enImg {
     width: 25vw;
     height: 60vh;
     display: flex;
@@ -78,11 +82,11 @@ nav div{
     background-position: center;
 }
 
-.entext{
+.entext {
     width: 40vw;
 }
 
-.spectrum{
+.spectrum {
     width: 90vw;
     height: 60vh;
     background-color: rgb(255, 255, 255);
@@ -97,7 +101,7 @@ nav div{
     line-height: 2rem;
 }
 
-.spimg{
+.spimg {
     width: 25vw;
     height: 60vh;
     display: flex;
@@ -106,34 +110,36 @@ nav div{
     background-position: center;
 }
 
-.sptext{
+.sptext {
     width: 40vw;
 }
 
-.ebutt{
+.ebutt {
     margin-top: 0.5cm;
-    background-color: rgb(23, 78, 166) ;
+    background-color: rgb(23, 78, 166);
     color: white;
     border-radius: 7px;
-    width: 4cm; height:1cm;
+    width: 4cm;
+    height: 1cm;
     overflow-y: hidden;
     text-align: center;
     padding: 3px;
     font-size: large;
-    font-weight:400 ;
+    font-weight: 400;
 }
+
 .ebutt:hover {
     background-color: blue;
 }
 
-footer{
+footer {
     background-color: black;
     color: white;
     display: flex;
-    justify-content:center;
+    justify-content: center;
 }
 
-main{
+main {
     background-image: url(bgimg.jpg);
     object-fit: cover;
 }
