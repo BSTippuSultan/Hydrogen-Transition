@@ -20,7 +20,6 @@ nav {
     /* background-color: rgb(4, 20, 110); */
     display: flex;
     justify-content: space-between;
-    /* position: fixed; */
 }
 
 nav ul {
@@ -53,6 +52,20 @@ nav div {
     margin-left: 2vw;
 }
 
+main div{
+    margin: 2vw;
+}
+
+main h2{
+    text-decoration: underline;
+    color: rgb(23, 78, 166);
+}
+
+main .img{
+    display: flex;
+    justify-content: center;
+}
+
 footer {
     background-color: black;
     color: white;
@@ -61,7 +74,6 @@ footer {
 }
 
 main {
-    height: 90vh;
     background-image: url(bgimg.jpg);
     object-fit: cover;
 }
