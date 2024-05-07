@@ -20,6 +20,7 @@ nav {
     /* background-color: rgb(4, 20, 110); */
     display: flex;
     justify-content: space-between;
+    /* position: fixed; */
 }
 
 nav ul {
