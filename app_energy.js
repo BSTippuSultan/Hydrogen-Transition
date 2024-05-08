@@ -36,17 +36,21 @@ function calRegion (f,i){
     lambda= Math.abs( (100/1.097) / (Math.pow(f , -2 ) - Math.pow(i , -2 )) ) ;
      if (lambda >= 1000000 ) {
         region.innerText = 'Radio Waves' ;
-    } else if (lambda >= 250 ){
+    } else if (lambda >= 25000 ){
+        region.innerText = 'Microwave' ;
+    } else if (lambda >= 2500 ){
         region.innerText = 'Infrared' ;
     } else if (lambda >= 800 ){
         region.innerText = 'Near Infrared';
     } else if (lambda >= 400) {
         region.innerText = 'Visible Light';
       // region.style.backgroundColor = '';
-    } else if (lambda >= 200 ){
+    } else if (lambda >= 1 ){
         region.innerText = 'Ultraviolet';
+    } else if (lambda >= 0.001 ){
+        region.innerText = 'X-Rays';
     } else {
-        region.innerText = 'NOTA' ;
+        region.innerText = 'Unknown' ;
     }
 }
 function calAns (){    

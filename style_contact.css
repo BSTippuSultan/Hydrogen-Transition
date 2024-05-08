@@ -61,7 +61,31 @@ footer {
 }
 
 main {
-    height: 90vh;
+    padding: 12vw;
     background-image: url(bgimg.jpg);
     object-fit: cover;
+}
+
+.box{
+    width: 60vw;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: #174ea678 20px 16px 20px 0px;
+
+}
+
+.box h1{
+    display: flex;
+    justify-content: center;
+}
+
+.box li{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.box li:hover{
+    font-size: 30px;
 }
