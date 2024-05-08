@@ -71,14 +71,15 @@ nav div {
     border-radius: 10px;
     font-size: large;
     line-height: 2rem;
+    box-shadow: 5px 1px 20px 4px;
 }
 
 .enImg {
-    width: 25vw;
+    width: 40vw;
     height: 60vh;
     display: flex;
     border-radius: 10px;
-    background-image: url(energy\ img.avif);
+    background-image: url(enImg.webp);
     background-position: center;
 }
 
@@ -86,7 +87,7 @@ nav div {
     width: 40vw;
 }
 
-.spectrum {
+.wave {
     width: 90vw;
     height: 60vh;
     background-color: rgb(255, 255, 255);
@@ -99,14 +100,43 @@ nav div {
     border-radius: 10px;
     font-size: large;
     line-height: 2rem;
+    
 }
 
-.spimg {
-    width: 25vw;
+.wvimg {
+    width: 40vw;
     height: 60vh;
     display: flex;
     border-radius: 10px;
-    background-image: url(spectrum\ img.jpeg);
+    background-image: url(wvimg.jpg);
+    background-position: center;
+}
+
+.wvtext {
+    width: 40vw;
+}
+
+.spectrum {
+    width: 90vw;
+    height: 60vh;
+    background-color: aliceblue;
+    display: flex;
+    margin: 30px;
+    padding: 25px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    font-size: large;
+    line-height: 2rem;
+    box-shadow: 5px 1px 20px 4px;
+}
+
+.spImg {
+    width: 40vw;
+    height: 60vh;
+    display: flex;
+    border-radius: 10px;
+    background-image: url(spimg.webp);
     background-position: center;
 }
 
